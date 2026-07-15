@@ -85,7 +85,8 @@ export default async function BlogPost({ params }: BlogPostProps) {
   const seoTitle = acfSeo?.title || headline;
   const seoDescription = acfSeo?.description || excerpt || headline;
   const imageUrl = featuredImage?.source_url as string | undefined;
-  const authorName = author?.name as string | undefined;
+  // const authorName = author?.name as string | undefined;
+  const authorName = "Car Sales Brisbane";
   const heroHtml =
     typeof post.acf?.hero_section === "string"
       ? post.acf.hero_section.trim()
